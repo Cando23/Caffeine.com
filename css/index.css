@@ -1,0 +1,141 @@
+html,body{
+    height: 100%;
+}
+*{
+    text-decoration: none;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', Verdana;
+    font-size: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.content{
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    display: block;
+}
+
+.center-boldtext {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.center-img {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    border-top-style: solid;
+    border-top-color: black;
+}
+
+.coffe-text {
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: xx-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.coffe-img {
+    height: 530px;
+    background: url('../images/Blog_Img.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.img-left {
+    float: left;
+    margin: 7px 7px 7px 0;
+    height: 100px;
+}
+
+header {
+    padding-top: 5px;
+}
+
+ul {
+    list-style: none;
+    display:flex;
+    float: right;
+}
+#menu li {
+    margin-right: 30px;
+}
+
+#menu a {
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+#menu a:hover {
+    color: #EF5A42;
+}
+
+#menu li:last-child {
+    margin-right: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and (min-width: 1200px) {
+    .coffe-img {
+        height: 550px;
+        background: url('../images/Blog_Img.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+@media screen and (max-device-width:800px), screen and (max-width:640px){
+    .menu{display:none;}
+    .logo{display:none;}
+    .trigger{
+      display:inline-block;
+      margin:10px;
+      cursor:pointer;   
+     }
+     .trigger i{
+       display:block;
+       width:30px;
+       height:6px;
+       margin:4px auto;
+       background:#222;
+     }
+     ul{
+       float:none;  
+     }
+     .container{
+         max-width: 640px;
+     }
+     li{
+         font-size: 20px;
+     }
+     .show{
+       display:block;
+     }
+  }
