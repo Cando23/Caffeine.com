@@ -68,14 +68,14 @@ form {
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
-	letter-spacing:3px;
+	letter-spacing:1px;
 	outline:none;
 	transition:0.2s;
+	color:white;
    }
    .btn:hover {
 	transform:translateY(-5px);
 	box-shadow:0 7px 0 #6d422e;
-	color:white;
    }
    .btn:active {
 	transform:translateY(-2px);

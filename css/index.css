@@ -1,10 +1,12 @@
-html,body{
+html, body {
     height: 100%;
 }
-*{
+
+* {
     text-decoration: none;
     padding: 0;
 }
+
 body {
     font-family: 'Lato', Verdana;
     font-size: 100%;
@@ -13,10 +15,12 @@ body {
     flex-direction: column;
     margin: 0;
 }
-.content{
+
+.content {
     flex-grow: 1;
     margin-bottom: 30px;
 }
+
 .container {
     margin: auto;
     width: 100%;
@@ -77,9 +81,10 @@ header {
 
 ul {
     list-style: none;
-    display:flex;
+    display: flex;
     float: right;
 }
+
 #menu li {
     margin-right: 30px;
 }
@@ -92,12 +97,12 @@ ul {
     line-height: 35px;
 }
 
-#menu a:hover {
-    color: #EF5A42;
+#menu li:last-child {
+    margin-right: 100px;
 }
 
-#menu li:last-child {
-    margin-right: 0;
+#menu a:hover {
+    color: #EF5A42;
 }
 
 .clear {
@@ -111,31 +116,36 @@ ul {
         background-size: cover;
     }
 }
-@media screen and (max-device-width:800px), screen and (max-width:640px){
-    .menu{display:none;}
-    .logo{display:none;}
-    .trigger{
-      display:inline-block;
-      margin:10px;
-      cursor:pointer;   
-     }
-     .trigger i{
-       display:block;
-       width:30px;
-       height:6px;
-       margin:4px auto;
-       background:#222;
-     }
-     ul{
-       float:none;  
-     }
-     .container{
-         max-width: 640px;
-     }
-     li{
-         font-size: 20px;
-     }
-     .show{
-       display:block;
-     }
-  }
+
+@media screen and (max-device-width:800px), screen and (max-width:640px) {
+    .menu {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .trigger {
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .trigger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        background: #222;
+    }
+    ul {
+        float: none;
+    }
+    .container {
+        max-width: 640px;
+    }
+    li {
+        font-size: 20px;
+    }
+    .show {
+        display: block;
+    }
+}

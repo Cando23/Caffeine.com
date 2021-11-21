@@ -1,0 +1,16 @@
+<div class="container">
+    <h2 class="center-boldtext">{content_caption}</h2>
+    <p class="center-text"> {other_content}</p>
+</div>
+<div class="contact-form">
+    <form method="POST" action="register.php">
+        <label>Логин</label>
+        <input name="login" placeholder="Введите логин">
+        <label>Пароль</label>
+        <input name="password" placeholder="Введите пароль">
+        <label>Пароль еще раз</label>
+        <input name="password_confirm" placeholder="Повторите пароль">
+        <button type="submit">Зарегистрироваться</button>
+        {status}
+    </form>
+</div>

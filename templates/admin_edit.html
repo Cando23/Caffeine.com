@@ -1,0 +1,37 @@
+<div class="modal fade" id="edit{id}" tabindex="-1" role="dialog" aria-labelledby="createTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Изменить информацию о кофе</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="admin_actions.php" method="POST">
+            <div class="form-group">
+              <small>ID</small>
+              <input type="text" class="form-control" name="id" value="{id}">
+              </div>
+              <div class="form-group">
+                <small>Путь к картинке</small>
+                <input type="text" class="form-control" name="сontent_url" value="{content_url}">
+              </div>
+              <div class="form-group">
+                <small>Вступительный текст</small>
+                <textarea type="text" class="form-control" name="content_text" >{content_text}</textarea>
+              </div>
+              <div class="form-group">
+                <small>Основной текст</small>
+                <textarea type="text" class="form-control" name="content_text2" >{content_text2}</textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary" name="edit">Изменить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,70 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 2px solid rgb(104, 111, 116);
+    padding: 20px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid rgb(104, 111, 116);
+    outline: none;
+}
+
+button {
+    outline: none;
+    margin: 10px 0;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    transition: 0.2s;
+    background: #ab7b64;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 0 #6d422e;
+}
+
+button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 0 black;
+}
+
+.help-link {
+    color: #EF5A42;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.help-info {
+    margin: 10px 0;
+}
+
+.contact-form {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.message {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
